@@ -14,7 +14,9 @@
 
 <body>
     <nav>
-        <ul class="toggle">
+            <img class="bar" src="./SVG/toggle/bar.svg" alt="">
+
+        <ul id="toggle">
             <li>
                 <a href="#card">
                     <img src="./SVG/toggle/card.svg" alt="">
@@ -28,7 +30,7 @@
             
         </ul>
 
-        <img class="bar" src="./SVG/toggle/bar.svg" alt="">
+        
 
         <ul class="icon">
             <li>
@@ -44,4 +46,22 @@
         </ul>
         
     </nav>
+
+    <section id="page">
+
+    </section>
 </body>
+
+
+<script type="text/javascript">
+	var Togglebutton = document.querySelector('#toggle');
+	var Toggle = document.querySelector('#page');
+
+// show or hide
+    Togglebutton.addEventListener('click',function(){
+			Toggle.classList.toggle('list');
+			Togglebutton.classList.toggle('card');
+	});
+
+
+</script>
