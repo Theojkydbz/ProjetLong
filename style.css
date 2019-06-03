@@ -1,0 +1,32 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: inline;
+    margin: 2vw;
+    
+}
+nav .icon {
+    position: absolute;
+    top:2%;
+    right:2%;
+}
+
+nav .toggle {
+    position: absolute;
+    top:2%;
+    left:2%;
+}
+
+nav :firstchildimg {
+    position: absolute;
+    top:2%;
+    left:2%;
+}
