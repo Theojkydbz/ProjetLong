@@ -6,21 +6,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(./SVG/back/circle.svg);
-    background-repeat: no-repeat;
-    background-position: -550px 200px;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-    transition-timing-function: ease-out;
-}
-
-.body-page {
-    background-position: 125px -350px;
-    
-}
-
-
 ul li {
     text-decoration: none;
     font-size: 1.3rem;
@@ -34,72 +19,14 @@ nav .icon {
     right:2%;
 }
 
-li .list{
+nav .toggle {
     position: absolute;
     top:2%;
-    left:3%;
-    -webkit-transition:  -webkit-transform 0.4s, opacity 0.4s;;
-    transition: transform 0.4s, opacity 0.4s;;
-}
-li .card{
-    position: absolute;
-    top:2%;
-    left:17%;
-    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-    transition: transform 0.4s, opacity 0.4s;
+    left:2%;
 }
 
 nav .bar {
     position: absolute;
     top:3.5%;
-    left:7%;
-}
-nav{
-    padding: 4%;
-    background-color: rgba(255, 255, 255, 0)
-}
-
-.hidetogglecard{
-    
-    -webkit-transform: translate(-45px);
-    transform: translate(-45px);
-  
-}
-.hidetogglelist{
-    opacity: 0;
-    -webkit-transform: translate(45px);
-    transform: translate(45px);
-  
-}
-.hide {
-    display: none;
-}
-
-.circle{
-    position: fixed;
-}
-
-#cardactive{
-    border-radius: 5%;
-    background: #FFFFFF;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.12);
-    height: 350px;
-    margin: 30px;
-    margin-top: 10px;
-}
-
-#cardback1{
-    position: absolute;
-    background: #FFFFFF;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.23);
-    height: 350px;
-    widows: 200px;
-    margin: 10px;
-    margin-top: 10px;
-}
-#cardback1{
-    background: rgb(160, 34, 34);
-}
-#cardback2{
-    background: rgb(31, 148, 168);
+    left:4%;
 }
