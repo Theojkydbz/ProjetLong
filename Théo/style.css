@@ -1,10 +1,27 @@
 *{
     font-family: 'Work Sans', sans-serif;
     text-decoration: none;
-    margin: 0;
+    
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body{
+    background-image: url(./SVG/back/circle.svg);
+    background-repeat: no-repeat;
+    background-position: -550px 200px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    transition-timing-function: ease-out;
+    margin: 0
+}
+
+.body-page {
+    background-position: 125px -350px;
+    
+}
+
 
 ul li {
     text-decoration: none;
@@ -19,14 +36,274 @@ nav .icon {
     right:2%;
 }
 
-nav .toggle {
+li .list{
     position: absolute;
-    top:2%;
-    left:2%;
+    top:4.5%;
+    left:3%;
+    -webkit-transition:  -webkit-transform 0.4s, opacity 0.4s;;
+    transition: transform 0.4s, opacity 0.4s;;
+}
+li .card{
+    position: absolute;
+    top:4.5%;
+    left:17%;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
 }
 
 nav .bar {
     position: absolute;
-    top:3.5%;
-    left:4%;
+    top:6%;
+    left:7%;
+}
+nav{
+    padding: 4%;
+    background-color: rgba(255, 0, 0, 0)
+}
+
+.hidetogglecard{
+    
+    -webkit-transform: translate(-45px);
+    transform: translate(-45px);
+  
+}
+.hidetogglelist{
+    opacity: 0;
+    -webkit-transform: translate(45px);
+    transform: translate(45px);
+  
+}
+.hide {
+    display: none;
+}
+
+.circle{
+    position: fixed;
+}
+
+#cardactive{
+    border-radius: 5%;
+    background: #FFFFFF;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.12);
+    height: 350px;
+    margin: 30px;
+    margin-top: 10px;
+}
+
+#cardback1{
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.23);
+    height: 350px;
+    widows: 200px;
+    margin: 10px;
+    margin-top: 10px;
+}
+#cardback1{
+    background: rgb(160, 34, 34);
+}
+#cardback2{
+    background: rgb(31, 148, 168);
+}
+
+ul.tabbar{
+    position: fixed;
+    right:0;
+    left:0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+ul.tabbar li{
+    padding-left: 4px;
+    margin: 0vw;
+}
+ul.tabbar :first-child{
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0vw;
+}
+
+ul.tabbar li.write{
+    position: fixed;
+    right: 0;
+    bottom: 0%;
+}
+ul.tabbar li.nope img{
+    padding-bottom: 0.5%;
+}
+ul.tabbar li.read img{
+    padding-bottom: 0.5%;
+}
+
+ul.menulist li a.category{
+    font-family: AvenirNext-Regular;
+    font-size: 17px;
+    color: #0652DD;
+    letter-spacing: -0.01px;
+    margin-left: 5%
+}
+ul.menulist li a.category img{
+    margin: -1px;
+}
+
+
+#card{
+    border-radius: 5%;
+    background: #FFFFFF;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.12);
+    height: 150px;
+    width: 250px;
+    margin: 15px;
+    margin-top: 10px;
+}
+section{
+    margin:0;
+}
+
+div.horizontalscroll ul.item-list{
+    white-space:nowrap;
+    width: inherit;
+    height: inherit;
+   
+    
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+}
+
+div.horizontalscroll ul.item-list{
+    scrollbar-width: none; 
+}
+
+div.horizontalscroll ul.item-list::-webkit-scrollbar { 
+    display: none; 
+}
+
+div.horizontalscroll ul.item-list li{
+    display:inline; 
+}
+
+/* --------- Profil --------- */
+
+div.bg{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+ul.toggle li.back{
+    margin-left: 3%
+}
+
+ul.toggle li.more{
+    position: absolute;
+    top:2%;
+    right:2%;
+}
+ul.profildescription{
+    padding-inline-start: 10px;
+}
+
+ul.profildescription li.name p{
+    font-family: AvenirNext-Regular;
+    font-size: 18px;
+    color: #4A4A4A;
+    letter-spacing: -0.01px;
+}
+ul.profildescription li.job p{
+    font-family: AvenirNext-Regular;
+    font-size: 16px;
+    color: #9B9B9B;
+    letter-spacing: -0.01px;
+}
+ul.profildescription li.location p{
+    font-family: AvenirNext-Regular;
+    font-size: 13px;
+    color: #9B9B9B;
+    letter-spacing: -0.01px;
+}
+ul.profil li.profiltop {
+    display: inline;
+    margin: 0vw;
+    padding-left: 2vw;
+}
+ul.profildescription li{
+    margin: 0vw;
+}
+ul.profildescription li p{
+    margin: 1vw;
+}
+ul.profilscore{
+    padding-left: 4vw
+}
+ul.profilscore li{
+    margin: 0vw
+}
+ul#menu li {
+    display: inline;
+    text-align: center;
+    margin-left: 5.5vh;
+
+}
+ul#menu li a{  
+    font-family: AvenirNext-Regular;
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: -0.01px;
+}
+
+ul#menu img{  
+    position: fixed;
+    top: 37%;
+    z-index: -99;
+}
+
+
+/* --------- Content --------- */
+
+body.content{
+    margin: 0;
+}
+
+ul.contentnav{
+    position: fixed;
+    top: 2%;
+}
+ul.contentnav li.back{
+    position: fixed;
+    top: 4%;
+}
+ul.contentnav li.time{
+    position: fixed;
+    top: 3.5%;
+    left: 27%
+}
+ul.contentnav li.bookmark{
+    position: fixed;
+    top: 4%;
+    right: 13%
+}
+ul.contentnav li.hider{
+    position: fixed;
+    top: 4%;
+    right: 2%
+}
+
+h1{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: AvenirNext-Bold;
+    font-size: 18px;
+    color: #7D7D7D;
+    letter-spacing: -0.01px;
+}
+p{
+    margin-left: 5%;
+    margin-right: 5%;
 }
