@@ -110,6 +110,7 @@ ul.tabbar{
     position: fixed;
     right:0;
     left:0;
+    bottom: 0;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
@@ -135,7 +136,7 @@ ul.tabbar li.read img{
     padding-bottom: 0.5%;
 }
 
-ul.menulist li a.category{
+a.category{
     font-family: AvenirNext-Regular;
     font-size: 17px;
     color: #0652DD;
@@ -184,7 +185,10 @@ div.horizontalscroll ul.item-list::-webkit-scrollbar {
 div.horizontalscroll ul.item-list li{
     display:inline; 
 }
-
+div.horizontalscroll ul.item-list li img{
+    margin-top: 5%;
+    margin-left: 5%;
+}
 /* --------- Profil --------- */
 
 div.bg{
@@ -196,6 +200,8 @@ div.bg{
     background-color: white;
     margin: 0;
     padding: 0;
+    overflow: auto;
+    
 }
 ul.toggle li.back{
     margin-left: 3%
@@ -256,6 +262,23 @@ ul#menu li a{
     font-size: 14px;
     color: #4A4A4A;
     letter-spacing: -0.01px;
+    position: relative;
+}
+
+ul#menu li a:before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #4A4A4A;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.2s;
+}
+ul#menu li a.current:before{
+    width: 100%;
 }
 
 ul#menu img{  
@@ -278,11 +301,12 @@ ul.contentnav{
 ul.contentnav li.back{
     position: fixed;
     top: 4%;
+    left: 4%;
 }
 ul.contentnav li.time{
     position: fixed;
     top: 3.5%;
-    left: 27%
+    left: 30%
 }
 ul.contentnav li.bookmark{
     position: fixed;
@@ -303,7 +327,223 @@ h1{
     color: #7D7D7D;
     letter-spacing: -0.01px;
 }
-p{
+p.entre{
     margin-left: 5%;
-    margin-right: 5%;
+    width: 90%;
+    margin-right:5%;
+}
+
+p{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right:5%;
+    width: 75%;
+    font-size: 18px;
+    font-family: AvenirNext-Regular;
+    color: #838383;
+    letter-spacing: -0.01px;
+}
+
+div.scroll{
+    overflow: auto;
+}
+
+div.scroll img.navbar{
+    position: fixed;
+}
+
+div.scroll h1{
+    margin-top: 15vh
+}
+
+div.scroll a.good{
+ background-color: #4CD589;
+ color: white;
+}
+
+div.scroll a.bad{
+    background-color: #F83462;
+    color: white;
+}
+div.inline{
+
+    display: flex;
+    flex-direction: row
+}
+img.timeline{
+    margin-left: 5%;
+    height: 140vh;
+    margin-top: 6%
+}
+
+section.recent{
+    position: fixed;
+    top:45.5%;
+    left: 0%;
+}
+section.recent img{
+    margin-top: -1.3%
+}
+
+
+/* --------- Comment --------- */
+
+ul.commentnav{
+    position: fixed;
+    top: 2%;
+}
+ul.commentnav li.back{
+    position: fixed;
+    top: 4%;
+    left: 3%
+}
+ul.commentnav li.time{
+    position: fixed;
+    top: 3.5%;
+    right:7%
+}
+p.comment{
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    font-size: 18px;
+    color: #838383;
+    letter-spacing: -0.01px;
+    width: 80%
+}
+.pros{
+    position: fixed;
+    top: 27%;
+    left: 15%
+}
+.cons{
+    position: fixed;
+    top: 27%;
+    right: 15%
+}
+
+
+.firstcomment{
+    margin-top: 85%;
+}
+.lastcomment{
+    margin-bottom:17%;
+}
+
+div.bg img.navbar{
+    position: fixed;
+}
+
+ul.filter{
+    top: 38.5%;
+    left: 3%;
+    position: fixed;
+}
+ul.filter li.filterall img{
+    position: fixed;
+    top: 42%;
+    left: 42%;
+}
+
+.comment-bar {
+    position: fixed;
+    bottom: 0rem;
+    right:0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 9px 4px rgba(0,0,0,0.08);
+    padding: 0.6rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.comment-bar-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    border-radius: 25px;
+    background: #0652DD;
+    border-radius: 12px;
+    color:white;
+    font-size: 1rem;
+    padding: .2rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+.comment-bar-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    background: #F5F5F5;
+    box-shadow: inset 0 0 7px 0 rgba(0,0,0,0.08);
+    border-radius: 15px;
+    padding: .2rem;
+    padding-left: .75rem;
+    width: 200px;
+    font-family: AvenirNext-Regular;
+    font-size: 14px;
+    color: #B3B3B3;
+    letter-spacing: -0.01px;
+}
+
+div#choicecolor{
+    transition: 0.4s;
+    position: fixed;
+    bottom:-10%;
+    right: 3%;
+    opacity: 0;
+}
+div#choicecolor.hider{
+    opacity: 1;
+    -webkit-transform: translate(0px, -95px);
+    transform: translate(0px, -95px);
+    
+}
+
+
+/* 
+div.choicecolor{
+    
+    
+    -webkit-transform: translate(0px, 45px);
+    transform: translate(0px, 45px);
+} */
+
+/* --------- Comment --------- */
+.bar{
+    position: fixed;
+    top: 30%;
+    left: 20%;
+}
+
+/* --------- Comment1 --------- */
+
+img.mask{
+    position: fixed;
+    top:0%;
+    left: 0%;
+}
+p.alert{
+    position: fixed;
+    top: 30%;
+    left:8%;
+    font-family: AvenirNext-DemiBold;
+    font-size: 18px;
+    color: #4A4A4A;
+    letter-spacing: -0.01px;
+}
+
+img.stop{
+    position: fixed;
+    top: 55%;
+    left: 9%;
+}
+img.ok{
+    position: fixed;
+    top: 55%;
+    right: 9%;
 }
