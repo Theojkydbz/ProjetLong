@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="style1.scss" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/gsap/TimelineMax.min.js"></script>
     
 </head>
 
@@ -18,12 +19,16 @@
 
         <ul id="toggle">
             <li>
+<<<<<<< HEAD
                 <a href="./content.html" class="card hidetogglecard">
+=======
+                <a href="#card">
+>>>>>>> adcd196a2c7684561ab8d7bb1d0d31a63bac06db
                     <img src="./SVG/toggle/card.svg" alt="">
                 </a>
             </li>
             <li>
-                <a href="#list" class="list">
+                <a href="#card">
                     <img src="./SVG/toggle/list.svg" alt="">
                 </a>
             </li>
@@ -47,6 +52,7 @@
         
     </nav>
 
+<<<<<<< HEAD
     <section id="page" class="hide">
             
         
@@ -395,6 +401,9 @@
     </section>
 
     <section id="page1" class="">
+=======
+    <section id="page">
+>>>>>>> adcd196a2c7684561ab8d7bb1d0d31a63bac06db
 
         <ul class="tabbar">
             <li class="write">
@@ -513,28 +522,24 @@
         </ul>
         
     </section>
+<<<<<<< HEAD
     
     
     
 
+=======
+>>>>>>> adcd196a2c7684561ab8d7bb1d0d31a63bac06db
 </body>
 
 
-<script>
+<script type="text/javascript">
 	var Togglebutton = document.querySelector('#toggle');
-    var buttonlist = document.querySelector('.list');
-    var buttoncard = document.querySelector('.card');
 	var Toggle = document.querySelector('#page');
-    var Toggle1 = document.querySelector('#page1');
-    var boddy = document.querySelector('body');
 
 // show or hide
     Togglebutton.addEventListener('click',function(){
-			Toggle.classList.toggle('hide');
-            Toggle1.classList.toggle('hide');
-			buttoncard.classList.toggle('hidetogglecard');
-            buttonlist.classList.toggle('hidetogglelist');
-            boddy.classList.toggle('body-page');
+			Toggle.classList.toggle('list');
+			Togglebutton.classList.toggle('card');
 	});
 
 

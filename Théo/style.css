@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 
 body{
     background-image: url(./SVG/back/circle.svg);
@@ -23,6 +24,8 @@ body{
 }
 
 
+=======
+>>>>>>> adcd196a2c7684561ab8d7bb1d0d31a63bac06db
 ul li {
     text-decoration: none;
     font-size: 1.3rem;
@@ -36,8 +39,9 @@ nav .icon {
     right:2%;
 }
 
-li .list{
+nav .toggle {
     position: absolute;
+<<<<<<< HEAD
     top:4.5%;
     left:3%;
     -webkit-transition:  -webkit-transform 0.4s, opacity 0.4s;;
@@ -49,10 +53,15 @@ li .card{
     left:17%;
     -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
     transition: transform 0.4s, opacity 0.4s;
+=======
+    top:2%;
+    left:2%;
+>>>>>>> adcd196a2c7684561ab8d7bb1d0d31a63bac06db
 }
 
 nav .bar {
     position: absolute;
+<<<<<<< HEAD
     top:6%;
     left:7%;
 }
@@ -547,3 +556,8 @@ img.ok{
     top: 55%;
     right: 9%;
 }
+=======
+    top:3.5%;
+    left:4%;
+}
+>>>>>>> adcd196a2c7684561ab8d7bb1d0d31a63bac06db
