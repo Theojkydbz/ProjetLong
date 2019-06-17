@@ -44,7 +44,7 @@
         <ul id="menu">
                 <img src="./SVG/profil/nav.svg" alt="">
                 <li>
-                    <a href="#Récents">
+                    <a href="#Récents" class="current">
                         Récents
                     </a>
                 </li>
@@ -60,7 +60,26 @@
                 </li>
                 
         </ul>
-        
+        <section class="recent">
+            <img  src="./SVG/profil/recent/good.svg" alt="">
+        </section>
+        <section class="article">
+            <p>article</p>
+        </section>
+        <section class="bookmark">
+            <p>bookmark</p>
+        </section>
     
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu a').click(function(){
+                $('#menu a').removeClass('current'); 
+                $(this).addClass('current'); 
+            });
+        });
+    </script>
+
+  
 </body>

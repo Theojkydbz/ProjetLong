@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>APP_EPO_profilsarah</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="bg">
+        <ul class="toggle">
+            <li class="back">
+                <a href="./comment1.html">
+                    <img src="./SVG/backarrow.svg" alt="">
+                </a>
+            </li>
+            <li class="more">
+                <a href="#more">
+                    <img src="./SVG/more.svg" alt="">
+                </a>
+            </li>
+        </ul>
+        
+        <ul class="profil">
+            <li class="profiltop">
+                <img src="./SVG/profilsarah/content.svg" alt="">
+            </li>
+        </ul>
+        <ul class="profilscore">
+            <li class="con">
+                <img src="./SVG/profilsarah/con.svg" alt="">
+            </li>
+            <li class="pro">
+                <img src="./SVG/profilsarah/pro.svg" alt="">
+            </li>
+            <li class="publi">
+                <img src="./SVG/profilsarah/publi.svg" alt="">
+            </li>
+        </ul>
+        <ul id="menu">
+                <img src="./SVG/profilsarah/nav.svg" alt="">
+                <li>
+                    <a href="#Récents" class="current">
+                        Récents
+                    </a>
+                </li>
+                <li>
+                    <a href="#Articles">
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#Bookmarks">
+                        Bookmarks
+                    </a> 
+                </li>
+                
+        </ul>
+        
+    
+    </div>
+    <section class="recent">
+                    <img src="./SVG/profilsarah/recent/good1.svg" alt="">
+                    <img src="./SVG/profilsarah/recent/bad1.svg" alt="">
+                    <img src="./SVG/profilsarah/recent/bad2.svg" alt="">
+                    <img src="./SVG/profilsarah/recent/bad3.svg" alt="">
+
+    </section>
+
+    <section class="article">
+        <p>article</p>
+    </section>
+
+    <section class="bookmark">
+        <p>bookmark</p>
+    </section>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu a').click(function(){
+                $('#menu a').removeClass('current'); 
+                $(this).addClass('current'); 
+            });
+        });
+    </script>
+</body>
